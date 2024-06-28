@@ -34,3 +34,24 @@ else{
 // DICHIARO I BOTTONI
 const button = document.getElementById('lanciaDadiBtn');
 const resultDiv = document.getElementById('result');
+
+// FUNCTION
+button.addEventListener('click', function() {
+     // Generare un numero casuale da 1 a 6 per il giocatore
+     let giocatore = Math.floor(Math.random() * 6) + 1;
+    
+     // Generare un numero casuale da 1 a 6 per il computer
+     let computer = Math.floor(Math.random() * 6) + 1;
+    
+     // Determinare il vincitore
+    let risultato;
+    if (giocatore > computer) {
+        risultato = `Giocatore vince. Giocatore: ${giocatore} - Computer: ${computer}`;
+    } else if (giocatore < computer) {
+        risultato = `Computer vince. Giocatore: ${giocatore} - Computer: ${computer}`;
+    } else {
+        risultato = `Pareggio. Giocatore: ${giocatore} - Computer: ${computer}`;
+    }
+    
+    document.getElementById('result').innerHTML = risultato
+})
