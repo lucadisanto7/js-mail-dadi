@@ -21,8 +21,8 @@ for(let i = 0; i < mail_list.length; i++){
     }
 }
 if (email_found === true ){
-    console.log('La mail è presente nella lista')
+    document.getElementById('email-message').innerHTML = "La mail è presente nella lista"
 }
 else{
-    console.log('La mail non è presente nella lista, inseriscine una nuova email')
+    document.getElementById('email-message').innerHTML = "La mail non è presente nella lista, inserisci una nuova email"
 }
