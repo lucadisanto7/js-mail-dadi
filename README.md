@@ -12,6 +12,7 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
+
 MAIL
 Dichiaro una variabile contenente la mail
 Ricavo il valore della variabile tramite un prompt
@@ -23,3 +24,19 @@ Creo un ciclo for dichiarando un contatore "i" che aumenta fino a che non verifi
         La mail e' presente nella lista
     altrimenti scrivi
         la mail non e' presente nella lista
+
+
+GIOCO DEI DADI
+Dichiaro una variabile del giocatore contenente un numero generato con Math.floor
+Dichiaro una variabile del computer contenente un numero generato con Math.floor
+Dichiaro una variabile risultato
+SE
+    il numero del giocatore > computer
+allora
+    vince giocatore
+altrimenti SE
+    giocatore < computer
+allora
+    vince il computer
+altrimenti 
+    pareggio    
