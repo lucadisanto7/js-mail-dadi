@@ -5,6 +5,24 @@ const mail_list =
     "nastynabiiva@chahcyrans.com", 
     "cpgm4x4@fbclone.com", 
     "artemslobozhaninov@aulaoberta.es"]
-    
+
+
 // DICHIARO LA VARIABILE  
-let email = prompt("inserisci la tua email")                    
+let email = prompt("inserisci la tua email")
+
+
+// VARIABILE DI CONTROLLO
+let email_found = false;
+
+
+for(let i = 0; i < mail_list.length; i++){
+    if(mail_list[i] === email){
+        email_found = true;
+    }
+}
+if (email_found === true ){
+    console.log('La mail è presente nella lista')
+}
+else{
+    console.log('La mail non è presente nella lista, inseriscine una nuova email')
+}
