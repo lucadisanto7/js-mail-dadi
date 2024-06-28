@@ -26,3 +26,11 @@ if (email_found === true ){
 else{
     document.getElementById('email-message').innerHTML = "La mail non è presente nella lista, inserisci una nuova email"
 }
+
+
+
+// GIOCO DEI DADI 
+
+// DICHIARO I BOTTONI
+const button = document.getElementById('lanciaDadiBtn');
+const resultDiv = document.getElementById('result');
